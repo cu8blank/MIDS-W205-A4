@@ -26,12 +26,12 @@ Therefore, the script cycled through 6,250 results pages, with 20 results per pa
 
 3. As the tweets were scrapped from the webpage, data was parsed into separate fields.
 The Scrapy class, FifawwcItem, stored data into the following fields:
-	tweet_text = Field() - text from tweet
-	url = Field() - text of url if any were listed in tweet
-	user_name = Field() - user_name of tweet author   
-	date_time = Field() - date and time of tweet    
-	hashtags = Field() - text of any hashtags referenced in tweet    
-	strong_hashtags = Field() - text of any hashtags that were bolded and matched the original search parameters
+	- tweet_text = Field() - text from tweet
+	- url = Field() - text of url if any were listed in tweet
+	- user_name = Field() - user_name of tweet author   
+	- date_time = Field() - date and time of tweet    
+	- hashtags = Field() - text of any hashtags referenced in tweet    
+	- strong_hashtags = Field() - text of any hashtags that were bolded and matched the original search parameters
 
 4. These fields were stored into columns of the WC2015.csv file.
 The WC2015.csv file was then uploaded into an S3 bucket.
@@ -62,21 +62,21 @@ The mapper script was run and the results were sorted.
 If the count was greater than 10,000, then the word was printed.
 
 4. The number of words with more than 10,000 occurrences were:
-CAN count is 11521	
-FIFAWWC count is 124246	
-USA count is 32284	
-and count is 14303	
-in count is 25376	
-the count is 53821	
-ENG count is 26318	
-a count is 24101	
-GER count is 20896	
-at count is 18985	
-of count is 15674
-on count is 23780	
-is count is 12785	
-for count is 20022	
-to count is 36270
+	- CAN count is 11521	
+	- FIFAWWC count is 124246	
+	- USA count is 32284	
+	- and count is 14303	
+	- in count is 25376	
+	- the count is 53821	
+	- ENG count is 26318	
+	- a count is 24101	
+	- GER count is 20896	
+	- at count is 18985	
+	- of count is 15674
+	- on count is 23780	
+	- is count is 12785	
+	- for count is 20022	
+	- to count is 36270
 
 
 
@@ -96,13 +96,13 @@ The mapper script was run and the results were sorted.
 3. The reducer script took the sorted results of the mapper script and aggregated the number of occurrences of each to compute the word count.
 
 4. Sample of results include:
-6/13/2015_19 count is 33	
-6/13/2015_7 count is 58	
-6/14/2015_13 count is 18	
-6/14/2015_2 count is 13	
-6/14/2015_20 count is 13	
-6/14/2015_9 count is 30	
-6/15/2015_16 count is 557	
+	- 6/13/2015_19 count is 33	
+	- 6/13/2015_7 count is 58	
+	- 6/14/2015_13 count is 18	
+	- 6/14/2015_2 count is 13	
+	- 6/14/2015_20 count is 13	
+	- 6/14/2015_9 count is 30	
+	- 6/15/2015_16 count is 557	
 
 
 
@@ -122,26 +122,26 @@ The mapper script was run and the results were sorted.
 
 4. The top 20 URLs tweeted by the users were:
 
-http://totalsoccerproject.com/2015/07/photos-womens-world-cup-germany-vs-england/	1339
-https://twitter.com/england/status/617460763490394112	1251
-https://instagram.com/p/4u8eQUJc57/	1250
-http://ift.tt/1BogwgX	492
-http://WWW.FIFANEWS.CA	406
-http://fifa.to/1H5ieWa	94
-http://www.voxstadium.fr/football/canada-2015-le-podium-pour-langleterre-50581/	89
-https://goo.gl/ksK82F	58
-http://soccer-aloud.com	52
-http://bbc.in/1mbSmuT	49
-http://bit.ly/1JZZedN	41
-http://bbc.in/1MzvS5F	35
-http://bit.ly/1J9juJB	33
-http://fifa.to/1eMW81u	28
-http://fifa.to/1Kpov2F	27
-http://the-local.com/sports/	25
-http://bbc.in/1Jol6B7	23
-http://bbc.in/1KnMXjj	20
-http://www.lameta.com	19
-http://bbc.in/1NtaSxJ	18
+	- http://totalsoccerproject.com/2015/07/photos-womens-world-cup-germany-vs-england/	1339
+	- https://twitter.com/england/status/617460763490394112	1251
+	- https://instagram.com/p/4u8eQUJc57/	1250
+	- http://ift.tt/1BogwgX	492
+	- http://WWW.FIFANEWS.CA	406
+	- http://fifa.to/1H5ieWa	94
+	- http://www.voxstadium.fr/football/canada-2015-le-podium-pour-langleterre-50581/	89
+	- https://goo.gl/ksK82F	58
+	- http://soccer-aloud.com	52
+	- http://bbc.in/1mbSmuT	49
+	- http://bit.ly/1JZZedN	41
+	- http://bbc.in/1MzvS5F	35
+	- http://bit.ly/1J9juJB	33
+	- http://fifa.to/1eMW81u	28
+	- http://fifa.to/1Kpov2F	27
+	- http://the-local.com/sports/	25
+	- http://bbc.in/1Jol6B7	23
+	- http://bbc.in/1KnMXjj	20
+	- http://www.lameta.com	19
+	- http://bbc.in/1NtaSxJ	18
 
 
 
@@ -164,14 +164,14 @@ The mapper script was run and the results were sorted.
 3. The reducer script took the sorted results of the mapper script and aggregated the number of occurrences of each pair of words to compute and to print the count.
 
 4. Sample of results include:
-all---me count is 10	
-all---meet count is 3	
-all---meetings count is 1	
-all---mid count is 1	
-all---might count is 3	
-all---minute count is 2	
-all---miss count is 1	
-all---monster count is 2	
+	- all---me count is 10	
+	- all---meet count is 3	
+	- all---meetings count is 1	
+	- all---mid count is 1	
+	- all---might count is 3	
+	- all---minute count is 2	
+	- all---miss count is 1	
+	- all---monster count is 2	
 
 
 
@@ -183,30 +183,30 @@ This was calulated using a modified map_1.py script.
 
 2. Draw a table with all the team support hashtags you can find and the number of support messages. What country did get apparently the most support?.
 The results from running the modified map_1.py script show that USA has the most support.
-aus count is 7508
-bra count is 4057
-can count is 16092
-chn count is 4124
-civ count is 2910
-cmr count is 2392
-col count is 5136
-crc count is 2152
-ecu count is 1549
-eng count is 30057
-esp count is 3024
-fra count is 8462
-ger count is 22121
-jpn count is 9968
-kor count is 2797
-mex count is 3134
-ned count is 3521
-nga count is 2921
-nor count is 4160
-nzl count is 1943
-sui count is 3123
-swe count is 4540
-tha count is 2306
-usa count is 33325
+	- aus count is 7508
+	- bra count is 4057
+	- can count is 16092
+	- chn count is 4124
+	- civ count is 2910
+	- cmr count is 2392
+	- col count is 5136
+	- crc count is 2152
+	- ecu count is 1549
+	- eng count is 30057
+	- esp count is 3024
+	- fra count is 8462
+	- ger count is 22121
+	- jpn count is 9968
+	- kor count is 2797
+	- mex count is 3134
+	- ned count is 3521
+	- nga count is 2921
+	- nor count is 4160
+	- nzl count is 1943
+	- sui count is 3123
+	- swe count is 4540
+	- tha count is 2306
+	- usa count is 33325
 
 3. How many times the word USA occur with the word Japan?
 The results were found using the MapReduce in Task #4.
@@ -233,13 +233,13 @@ Data - WC2015.csv, hw4-whoosh-index directory
 Strategy:
 1. The schema for the whoosh index directory matches the structure of the WC2015.csv.
 The fields included in the whoosh index directory are:
-id = ID(unique=True, stored=True),
-url = TEXT(stored=True), 
-strong_hashtags = TEXT(stored=True),
-hashtags = TEXT(stored=True),
-user_name = TEXT(stored=True),
-date_time = TEXT(stored=True),
-tweet_text = TEXT(stored=True)
+	- id = ID(unique=True, stored=True),
+	- url = TEXT(stored=True), 
+	- strong_hashtags = TEXT(stored=True),
+	- hashtags = TEXT(stored=True),
+	- user_name = TEXT(stored=True),
+	- date_time = TEXT(stored=True),
+	- tweet_text = TEXT(stored=True)
 
 
 2. Write a python program that takes queries (you need to design the supported queries) and search through the indexed archive using whoosh. Your program should handle at least 4 queries ( of your choice) similar to the sample query.
