@@ -233,12 +233,12 @@ Data - WC2015.csv, hw4-whoosh-index directory
 Strategy:
 1. The schema for the whoosh index directory matches the structure of the WC2015.csv.
 The fields included in the whoosh index directory are:
-	- id = ID(unique=True, stored=True),
-	- url = TEXT(stored=True), 
-	- strong_hashtags = TEXT(stored=True),
-	- hashtags = TEXT(stored=True),
-	- user_name = TEXT(stored=True),
-	- date_time = TEXT(stored=True),
+	- id = ID(unique=True, stored=True)
+	- url = TEXT(stored=True) 
+	- strong_hashtags = TEXT(stored=True)
+	- hashtags = TEXT(stored=True)
+	- user_name = TEXT(stored=True)
+	- date_time = TEXT(stored=True)
 	- tweet_text = TEXT(stored=True)
 
 
@@ -285,10 +285,11 @@ Section 4) Deliverables
 
 1. A link to your collected tweets and the index directory created by whoosh on S3.
 	- S3 link:
-	https://s3.amazonaws.com/w205_assignment4/
-	https://s3.amazonaws.com/w205_assignment4/WC2015.csv
-	https://s3.amazonaws.com/w205_assignment4/hw4-whoosh-index-dir
-	https://s3.amazonaws.com/w205_assignment4/hw4-whoosh-index-dir/MAIN_hgqw960hf3si9di4.seg
+	- https://s3.amazonaws.com/w205_assignment4/
+	- https://s3.amazonaws.com/w205_assignment4/WC2015.csv
+	- https://s3.amazonaws.com/w205_assignment4/hw4-whoosh-index-dir
+	- https://s3.amazonaws.com/w205_assignment4/hw4-whoosh-index-dir/MAIN_hgqw960hf3si9di4.seg
+	- https://console.aws.amazon.com/s3/home?region=us-west-2&bucket=w205_assignment4&prefix=
 
 
 2. Your source codes. Make sure you follow the assignment submission guidelines.
@@ -296,6 +297,4 @@ Section 4) Deliverables
 
 
 3. You should answer to each of the questions in the architecture design file. You also need to explain how you used map-reduce to obtain the data you needed in each case as well as how the overall index/search structure is designed and describe the supported keyword search queries.
-	- Question answers and architecture design explanation included in this README.
-	
-# MIDS-W204-A4
+	- Question answers and architecture design explanation included in this README file.
