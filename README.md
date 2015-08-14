@@ -146,7 +146,6 @@ The mapper script was run and the results were sorted.
 
 
 
-
 Task 4. Write a map-reduce program that for each word in the tweets' text, computes the occurrences of other words appear in every tweet that it appeared. 
 
 Deliverable:
