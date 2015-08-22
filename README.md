@@ -8,7 +8,7 @@ _______________________________________________________________
 
 Section 1) Data Collection - Using Scrapy
 
-"Write an acquisition program that can acquire the tweets between June 6th and July 5th of 2015 for the official FIFA Women World Cup hashtag (‚Äú#FIFAWWC‚Äù), as well as team code hashtags (e.g. ‚Äú#USA‚Äù and ‚Äú#GER‚Äù) and store them with appropriate structures in WC2015.csv on S3. You can find more information about teams here and the hashtags here. WC2015.csv will be used in the following tasks.
+"Write an acquisition program that can acquire the tweets between June 6th and July 5th of 2015 for the official FIFA Women World Cup hashtag (ì#FIFAWWCî), as well as team code hashtags (e.g. ì#USAî and ì#GERî) and store them with appropriate structures in WC2015.csv on S3. You can find more information about teams here and the hashtags here. WC2015.csv will be used in the following tasks.
 
 There is no hard requirement for the amount of tweets that you should gather. However, you should gather reasonable amount of tweets to be able to perform the analysis part. Note that you need to gather the historical data for which you need to design a strategy and use techniques such as web scrapping for the specified time frame (June 6th and July 5th of 2015)."
 
